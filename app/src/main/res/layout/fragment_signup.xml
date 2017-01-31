@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    android:padding="40dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/firstName"
+                android:background="@color/loginEditTextsColor"
+                android:paddingLeft="10dp"
+                android:hint="@string/signup.first.name"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/lastName"
+                android:background="@color/loginEditTextsColor"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:hint="@string/signup.last.name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:id="@+id/email"
+                android:background="@color/loginEditTextsColor"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:hint="@string/login.email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:id="@+id/pass"
+                android:background="@color/loginEditTextsColor"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:hint="@string/login.pass"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:id="@+id/confirmPass"
+                android:background="@color/loginEditTextsColor"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:hint="@string/signup.confirm.pass"
+                android:inputType="textPassword" />
+
+            <Button
+                android:text="@string/signup.registration.button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/registrButton"
+                android:elevation="21dp"
+                android:background="@color/loginButtonColor"
+                android:layout_marginTop="20dp"
+                android:onClick="onRegistrClick" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

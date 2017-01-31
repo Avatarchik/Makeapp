@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.1"
+    defaultConfig {
+        applicationId "com.app.makeapp"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 6
+        versionName "1.0.5"
+        manifestPlaceholders = [HOCKEYAPP_APP_ID: "ba74542918f8477cac80326c0efab151"]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file("/Users/gleb/projects/MakeApp/key/release.keystore")
+            storePassword "lfqdth"
+            keyAlias "gleb kravchenko"
+            keyPassword "lfqdth"
+        }
+
+        buildTypes {
+            release {
+                minifyEnabled false
+                signingConfig signingConfigs.release
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven { url 'http://repo.nivad.io:8081/artifactory/list/libs-release' }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.0.0'
+
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+
+    compile 'com.vk:androidsdk:1.6.5'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+
+    compile 'net.hockeyapp.android:HockeySDK:4.1.1'
+
+    compile 'com.github.rtoshiro.fullscreenvideoview:fullscreenvideoview:1.1.2'
+}

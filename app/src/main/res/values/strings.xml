@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">OS.Course</string>
+    <string name="fb.key">1249248481821491</string>
+    <integer name="com_vk_sdk_AppId">5785503</integer>
+
+    <string name="login.email">E-mail*</string>
+    <string name="login.pass">Password*</string>
+    <string name="login.registration.button">Registration / Log in</string>
+    <string name="login.forgot">Forgot?</string>
+
+    <string name="forgot.send">Send</string>
+
+    <string name="signup.first.name">First name*</string>
+    <string name="signup.last.name">Last name*</string>
+    <string name="signup.confirm.pass">Confirm password*</string>
+    <string name="signup.registration.button">Registration</string>
+    <string name="signup.problem">Some data were wrong, check entered data and try again</string>
+    <string name="signup.fields.empty">Fields are empty, fill in them and try again please.</string>
+
+    <string name="facebook.login.problem">Facebook login problem</string>
+
+    <string name="toolbar.popup.change.pass">Change password</string>
+    <string name="toolbar.popup.about">About</string>
+
+    <string name="reset.pass.old">Old password*</string>
+    <string name="reset.pass.new">New password*</string>
+    <string name="reset.pass.repeat">Repeat password*</string>
+
+    <string name="about.text" formatted="false">YES – This is Otchenash Sviatoslav’s app\n
+        YES – These are Otchenash Sviatoslav’s hands\n
+        YES – Now you have possibility to learn and develop your skill every moment you have, straight from your device.\n
+        \n
+        We are dedicated to develop the permanent make-up sector across the world. We created OS.Course app for educational purposes and global reach.\n
+        \n
+        We hope you like the possibility to learn from OS.Course app and will visit Otchenash Sviatoslav’s webpage and online store. Especially good companion for OS.Course app is OS Basic course workbook.\n
+        \n
+        Write to us:\n
+        info@os.design\n
+        \n
+        Visit us:\n
+        os.design\n
+        \n
+        OS.Course app version %s</string>
+
+    <string name="information.title">Information</string>
+    <string name="information.ok">OK</string>
+    <string name="information.invalid.link">Link is invalid</string>
+
+    <string name="buy.button">Buy</string>
+    <string name="buy.text.eyebrows" formatted="false">Eyebrows course - </string>
+    <string name="buy.text.arrows" formatted="false">Arrows course - </string>
+    <string name="buy.text.lips" formatted="false">Lips course - </string>
+    <string name="buy.text.all" formatted="false">All courses</string>
+    <string name="buy.toast.already.bought">You already bought this course</string>
+</resources>

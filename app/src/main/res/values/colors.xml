@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="loginButtonColor">#d4b029</color>
+    <color name="socialLoginColor">#000000</color>
+    <color name="loginEditTextsColor">#cbcbcb</color>
+    <color name="loginTextColor">#ffffff</color>
+    <color name="transparentBlack">#77000000</color>
+</resources>
